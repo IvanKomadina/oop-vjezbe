@@ -30,10 +30,12 @@ int find_min(int a[], int n)
 
 int main()
 {
-	int i, n, arr[50];
+	int i, n;
 
 	cout << "Enter the size of array: ";
 	cin >> n;
+
+	int* arr = new int[n];
 
 	cout << "Enter the elements of array: " << endl;
 	for (i = 0; i < n; i++)
@@ -44,6 +46,6 @@ int main()
 
 	cout << "Largest: " << max << endl;
 	cout << "Smallest: " << min << endl;
-	
-	return 0;
+	delete[] arr;
+
 }
