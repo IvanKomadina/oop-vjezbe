@@ -24,6 +24,21 @@ void Point::get_values(double& X, double& Y, double& Z)const {
 	Z = this->z;
 }
 
+double Point::getX()
+{
+	return x;
+}
+
+double Point::getY()
+{
+	return y;
+}
+
+double Point::getZ()
+{
+	return z;
+}
+
 double Point::distance_2D(double x1, double y1, double x2, double y2) {
 	return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2) * 1.0);
 }
