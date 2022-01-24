@@ -1,0 +1,5 @@
+﻿  binary.cpp
+c:\users\dario\onedrive\dokumenti\op-vjezbe1\vj4\zad3\binary.cpp(9): warning C4018: '<': signed/unsigned mismatch
+c:\users\dario\onedrive\dokumenti\op-vjezbe1\vj4\zad3\binary.cpp(30): warning C4018: '<': signed/unsigned mismatch
+c:\users\dario\onedrive\dokumenti\op-vjezbe1\vj4\zad3\binary.cpp(50): warning C4018: '<': signed/unsigned mismatch
+  Zad3.vcxproj -> C:\Users\Dario\OneDrive\Dokumenti\op-vjezbe1\Vj4\Debug\Zad3.exe

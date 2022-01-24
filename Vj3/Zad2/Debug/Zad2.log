@@ -1,0 +1,4 @@
+﻿  main2.cpp
+c:\users\dario\onedrive\dokumenti\op-vjezbe2\vjezba3\zad2\main2.cpp(44): warning C4018: '<': signed/unsigned mismatch
+c:\users\dario\onedrive\dokumenti\op-vjezbe2\vjezba3\zad2\main2.cpp(52): warning C4101: 'n': unreferenced local variable
+  Zad2.vcxproj -> C:\Users\Dario\OneDrive\Dokumenti\op-vjezbe2\Vjezba3\Debug\Zad2.exe

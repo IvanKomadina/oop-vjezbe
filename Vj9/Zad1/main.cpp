@@ -1,37 +1,53 @@
 #include <iostream>
+#include <ctime>
+#include <vector>
 #include "game.hpp"
-#include "HumanPlayer.hpp"
-#include "ComputerPlayer.hpp"
+#include "player.hpp"
 using namespace std;
 
 int main()
 {
 	int guess;
 	Game g;
-	HumanPlayer h;
-	ComputerPlayer c;
+	int humanPlayers, computerPlayers;
+	cout << "Enter the number of human players: ";
+	cin >> humanPlayers;
+	cout << "Enter the number of computer players: ";
+	cin >> computerPlayers;
 
-	while (g.gameProgress(h.points, c.points))
+	int totalPlayers = humanPlayers + computerPlayers;
+
+	vector<Player*> player;
+
+	for (int i = 0; i < totalPlayers; i++) {
+		if (i < humanPlayers) {
+			player.push_back(new HumanPlayer);
+		}
+		else {
+			player.push_back(new ComputerPlayer);
+		}
+	}
+
+
+	while (g.getGameOver() == 0)
 	{
-		g.displayScore(h.points, c.points);
-		h.setSumHuman();
-		c.setSumComputer();
-
-		while (true)
+		for (auto el : player)
 		{
-			guess = h.guessHuman();
-			if (g.checkGuess(c.sumInHands, guess))
+			el->selectCoins();
+		}
+
+		for (int i = 0; i < totalPlayers; i++)
+		{
+			for (int j = 0; j < totalPlayers; j++)
 			{
-				cout << "You guessed computer's sum! " << endl;
-				g.increasePoints(h.points);
-				break;
-			}
-			guess = c.guessComputer();
-			if (g.checkGuess(h.sumInHands, guess))
-			{
-				cout << "Computer correct guess! " << endl;
-				g.increasePoints(c.points);
-				break;
+				if (i != j)
+				{
+					if (g.checkGuess(player[j]->getSumInHands(), player[i]->guessSum()))
+					{
+						player[i]->increasePoints();
+						g.gameProgress(player[i]->getPoints());
+					}
+				}
 			}
 		}
 	}

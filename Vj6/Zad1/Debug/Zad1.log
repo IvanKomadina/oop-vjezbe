@@ -1,0 +1,6 @@
+﻿  main.cpp
+  model.cpp
+c:\users\dario\source\repos\vj6\zad1\model.cpp(25): error C2065: 'n': undeclared identifier
+c:\users\dario\source\repos\vj6\zad1\model.cpp(25): error C2143: syntax error: missing ';' before ')'
+c:\users\dario\source\repos\vj6\zad1\model.cpp(26): error C2059: syntax error: '}'
+  Generating Code...
