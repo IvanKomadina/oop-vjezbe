@@ -13,7 +13,7 @@ public:
 	int getSumInHands();
 	void setSumInHands(int add);
 	virtual void selectCoins() = 0;
-	virtual int guessSum() = 0;
+	virtual void guessSum() = 0;
 };
 
 class HumanPlayer : public Player
