@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\dario\onedrive\dokumenti\op-vjezbe\vj11\zad1\main.cpp(12): warning C4101: 'temp': unreferenced local variable
+c:\users\dario\onedrive\dokumenti\op-vjezbe\vj11\zad1\main.cpp(33): warning C4101: 'e': unreferenced local variable
+  Zad1.vcxproj -> C:\Users\Dario\OneDrive\Dokumenti\op-vjezbe\Vj11\Debug\Zad1.exe
